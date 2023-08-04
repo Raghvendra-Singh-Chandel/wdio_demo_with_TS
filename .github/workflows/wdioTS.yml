@@ -22,7 +22,7 @@ jobs:
       - name: Install
         run: npm install
       - name: Test
-        run: npx wdio
+        run: npx wdio ./wdio.conf.ts
       - uses: actions/upload-artifact@v2 # Update to the latest version of upload-artifact
         if: ${{ failure() }} # Correct the syntax for the if condition
         with:
