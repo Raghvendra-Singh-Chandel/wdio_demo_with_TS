@@ -62,7 +62,7 @@ export const config: Options.Testrunner = {
     capabilities: [
         {
             browserName: 'chrome',
-            'goog:chromeOptions': { 'args': ['--disable-gpu','--headless'] }
+            'goog:chromeOptions': { 'args': ['--disable-gpu','headless'] }
         }
     ],
 
@@ -107,7 +107,7 @@ export const config: Options.Testrunner = {
     connectionRetryTimeout: 120000,
     //
     // Default request retries count
-    connectionRetryCount: 3,
+    connectionRetryCount: 2,
     //
     // Test runner services
     // Services take over a specific job you don't want to take care of. They enhance
